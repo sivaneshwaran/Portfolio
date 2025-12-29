@@ -85,12 +85,12 @@ function toggle_click(){
         }, index * 100);
     });
 
-    if(toggleIcon.getAttribute("src") === "/IMAGES/menu-svgrepo-com.svg"){
-        toggleIcon.setAttribute("src","/IMAGES/cancel-svgrepo-com (white).svg");  
+    if(toggleIcon.getAttribute("src") === "/images/menu-svgrepo-com.svg"){
+        toggleIcon.setAttribute("src","/images/cancel-svgrepo-com (white).svg");  
         menuTween.restart();
 
     }else{
-        toggleIcon.setAttribute("src","/IMAGES/menu-svgrepo-com.svg");
+        toggleIcon.setAttribute("src","/images/menu-svgrepo-com.svg");
     };
 };  
 
