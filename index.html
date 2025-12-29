@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+<!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cantata+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+<!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<!-- Fontawsome link -->
+    <script src="https://kit.fontawesome.com/2a292e456c.js" crossorigin="anonymous"></script>
+
+<!-- Anmate.js link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<!-- STYLE SHEET LINKS -->
+    <link rel="stylesheet" href="CSS/style-sheet1.css">  
+
+<!-- GSAP link -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+
+</head>
+<body>
+<!-- 
+    SECTION 1 (Navbar in HEADER)   
+    SECTION 2 (ABOUT) 
+    SECTION 3 (EDUCTION & EXPERIENCE) 
+    SECTION 4 (SKILLS) 
+    SECTION 5 (PROJECTS with CONTACTS FOOTER) 
+-->
+
+
+<!-- SECTION 1 (Navbar in HEADER) -->
+    <header class="intro container-fluid">
+    <!-- Navbar content only -->
+        <nav class="Navbar">
+            <div class="row animate__animated animate__zoomIn animate__slow">
+            <!-- Column for "My Portfolio" -->
+                <div class="portfolio col-xl-3 col-lg-3 col-md-10 col-sm-5 col-10">
+                    <h1><a href="#" class="nav-link fw-bold">My Portfolio</a></h1>
+                </div>
+
+            <!-- Column for Menu bar --> 
+                <div class="menuBar col-xl-9 col-lg-9 col-md-2 col-sm-7 col-2 d-flex justify-content-center align-items-center p-1" id="menuBar">
+                    <ul class="menuBar-list  p-1">
+                    <!-- Menu Button one "Home" -->
+                        <li><a href="#" class="nav-link menu-btn  active-btn" >Home</a></li>
+                    <!-- Menu Button one "About" -->
+                        <li><a href="#" class="nav-link menu-btn ">About me</a></li>
+                    <!-- Menu Button one "Qualification" with inner list -->
+                        <li><a href="#" class="nav-link menu-btn ">Eperience</a></li>
+                    <!-- Menu Button one "Soft Skills"-->
+                        <li><a href="#" class="nav-link menu-btn ">Soft Skills</a></li>
+                    <!-- Menu Button one "Technical Skills"-->
+                        <li><a href="#" class="nav-link menu-btn ">Technical Skills</a></li>
+                    <!-- Menu Button one "Projects" with inner list-->
+                        <li><a href="#" class="nav-link menu-btn ">Projects</a></li>
+                    </ul>     
+
+                <!-- Toggle button for Mobile screen menubar -->
+                    <div class="toggle"> 
+                        <button class="toggle-btn" id="toggle-btn" >
+                            <img src="/IMAGES/menu-svgrepo-com.svg" alt="" class="toggleIcon" width="20px" height="20px">
+                        </button>
+                    </div>
+
+
+                </div><!-- Menubar div is ending here-->
+            </div><!-- Row div is ending here-->
+
+        </nav><!-- Navbar div is ending here-->
+      
+    </header>
+
+<!-- Menubar for mobile device -->
+    <div class="sidebar">        
+        <ul class="sidebar-menu  p-1">
+            <!-- Menu Button one "Home" -->
+                <li><a href="#" class="nav-link menu-btn  animate__animated  active-btn" id="sidebar-btn">Home</a></li>
+            <!-- Menu Button one "About" -->
+                <li><a href="#" class="nav-link menu-btn animate__animated" id="sidebar-btn">About me</a></li>
+            <!-- Menu Button one "Qualification" with inner list -->
+                <li><a href="#" class="nav-link menu-btn  animate__animated" id="sidebar-btn">Experience</a></li>
+            <!-- Menu Button one "Soft Skills"-->
+                <li><a href="#" class="nav-link menu-btn animate__animated " id="sidebar-btn">Soft Skills</a></li>
+            <!-- Menu Button one "Technical Skills"-->
+                <li><a href="#" class="nav-link menu-btn animate__animated " id="sidebar-btn">Technical Skills</a></li>
+            <!-- Menu Button one "Projects" with inner list-->
+                <li><a href="#" class="nav-link menu-btn animate__animated " id="sidebar-btn">Projects</a></li>
+        </ul>     
+    </div>
+
+<!-- SECTION 2 (ABOUT) -->  
+    <section class="about d-flex justify-content-center align-items-center">
+        <div class="about-box">
+            <div class="f-name animate__animated animate__fadeInUp ">
+                <span>Full</span>Stack
+                <div class="l-name animate__animated animate__fadeInUp animate__slow">
+                    <span>Dev</span>eloper
+                </div>
+            </div>
+            <div class="snap  animate__animated animate__fadeInUp animate__slower">
+                <div class="svg-div-1" >
+                    <img src="IMAGES/SVG/svg-curly-1.svg" class="animate__animated animate__slideInRight animate__delay-2s" alt="">
+                </div>
+                
+                <p class="animate__animated animate__zoomIn animate__delay-2s">
+                    I create immersive web experiences that are both visually compelling and technically sound
+                </p>
+            
+                <div class="svg-div-1">
+                    <img src="IMAGES/SVG/svg-curly-2.svg" class=" animate__animated animate__slideInLeft animate__delay-2s" alt="">
+                </div>
+                
+            </div>
+
+           
+        </div>
+
+    </section><!-- Section 2 "About" is ending here-->
+
+
+
+<!-- SECTION 3 (EDUCTION & EXPERIENCE) -->
+<section class="container-fluid">
+<!-- Project I -->
+    <div class="pro-1">
+        <div class="pro-1-box">
+            <div class="textBox-1">
+                <h2><span>E-commerce</span><br> Website</h2>
+                <h3>Lorem ipsum dolor sit</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>                
+                <h3>Lorem ipsum dolor sit</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                <a href="#" class="viewBtn-1">
+                    View Page 
+                </a>
+            </div>
+            <div class="videoBox-1">
+                <video src="Videos/dummy.mp4" muted loop autoplay></video>
+            </div>
+        </div>
+    </div>
+
+<!-- Project II -->
+    <div class="pro-2">
+        <div class="pro-2-box">
+            <div class="videoBox-2">
+                <video src="Videos/dummy.mp4" muted loop autoplay></video>
+            </div>
+            <div class="textBox-2">
+                <h2><span>Login-Logout</span><br> System</h2>
+                <h3>Login-Logout System build  <br>using PHP and MySQL</h3>
+                <p>Simple system created for demonstrate <br> the MySQL and PHP backend Knowledge</p>                
+
+                <a href="#" class="viewBtn-2">
+                    View Page 
+                </a>
+            </div>
+        
+        </div>
+    </div>
+
+<!-- Other Web Projects -->
+     <div class="pro-3 container-fluid d-flex justify-content-evenly align-items-center flex-column">
+        <div class="textBox-3 ">
+            <h2 class="fw-bold w-100 text-center">Other Web Projects</h2>
+        </div>
+        <div class="card-wrapper container-fluid">
+            <div class="right-blur"></div>
+            <div class="left-blur"></div>
+            <div class="content">
+            </div>
+        </div>
+     </div>
+
+</section>
+
+
+<!-- JQUERY LINK -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- WAYPOINT LINK -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- Javascript file link -->
+    <!-- <script src="JS/gsap.min.js"></script> -->
+    <script src="JS/script.js"></script>
+    <!-- <script src="JS/one.js"></script> -->
+</body>
+</html>

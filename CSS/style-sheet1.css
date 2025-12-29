@@ -1,0 +1,875 @@
+*{
+    margin : 0;
+    padding : 0;
+    font-family:  "Poppins", sans-serif;
+    font-style: normal;
+}
+
+body{
+    background-color: black;
+}
+
+
+/* HEADER section */
+.intro{
+    background-color: none;
+    position: fixed;
+    z-index: 100;
+    backdrop-filter: blur(40px);
+    border-bottom: 1px solid white;
+}
+
+/* Navbar contents */
+.portfolio{
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    background-color: none;
+
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menuBar-list{
+    width: 100%;
+    height: 60%;    
+    background-color: transparent;
+
+    list-style: none;
+
+    /* box-shadow: 0px 0px 5px 0px #123458; */
+    border-radius: 50px;
+    /* border: 2px solid white; */
+
+    margin: 2% 0%;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    
+}
+
+.menuBar-list li{
+    margin: 0% 1%;
+    transition: 800ms;
+
+}
+
+.menu-btn{
+    padding: 3px 10px;
+    background-color: none;
+    font-weight: 800;
+    font-size: 1rem;
+    color: white;
+    border-radius: 5px;
+}
+
+.active-btn{
+    color:#13D848;
+    border: 1px solid #13D848;
+
+}
+
+.menu-btn:hover{
+    color: #13D848;
+    font-weight: bold;
+
+    transition: 800ms;
+}
+
+.menu-btn:active{
+    color: blue;
+}
+
+.toggle{
+    padding: 3px 5px;
+    background-color: transparent;
+    display: none;
+    border-radius: 5px;
+    position: relative;
+    justify-content: center;
+    align-items: center; 
+
+}
+
+.toggle-btn {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 800ms;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.sidebar{
+    width: 100%;
+    height: 60%;
+    /* background-color: #123458; */
+    backdrop-filter: blur(50px);
+    border-bottom: 1px solid white;
+
+    position: fixed;
+    left: 0;
+    top: 6vh;
+    padding: 0% 25% ;
+    display: none;
+
+    z-index: 99;
+}
+
+.sidebar-menu{  
+    list-style: none;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:10%; 
+}
+
+
+.sidebar-menu .menu-btn{
+    margin: 10% 0%;
+}
+
+
+/* SECTION 2 About content */
+.about{
+    width: 100%;
+    height: 105vh;    
+    background-image: radial-gradient(800px at top left, rgb(22, 72, 1), rgb(0, 0, 0));  
+    position: relative;
+    z-index: 0;
+}
+
+.about-box{
+    width: 100%;
+    height: 100%;
+    background-color: none;
+}
+
+.f-name{
+    width: 100%;
+    height: 85vh;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+    font-size: 6rem;
+    font-weight: bolder;
+    color: transparent;
+    -webkit-text-stroke: 3px #13D848;
+
+    margin-top: 20vh;
+
+}
+
+.f-name span{
+    color: #13D848;
+    background-clip: text;
+    -webkit-text-stroke: 3px #13D848;
+
+
+}
+
+.l-name{
+    position: absolute;
+    z-index: 3;
+    margin-top: 5%;
+
+    font-size: 10rem;
+    font-weight: bolder;
+    color: transparent;
+    -webkit-text-stroke: 2px bisque;
+
+}
+
+.l-name span{
+    color: bisque;
+    -webkit-text-stroke: 2px bisque;
+
+}
+
+.snap{
+    color: white;
+    font-size: 1.5rem;
+    color: bisque;
+    width: 100%;
+    height: 40vh;
+    background-color: none;
+
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 55vh;
+    
+}
+
+.snap p{
+    width: 50%;
+    height: 100%;
+    background-color: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0px;
+}
+
+.svg-div-1{
+    width: 200px;
+    height: 200px;
+}
+
+.svg-div-1 img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Project 1 (Div) */
+.pro-1{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), black);
+
+}
+
+.pro-1-box{
+    width: 100%;
+    height: 100%;
+    background-color: none;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.textBox-1{
+    width: 45%;
+    height: 100vh;
+
+    color: bisque;
+    text-align: left;
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+
+}
+
+.textBox-1 h2{
+    font-size: 3rem;
+    font-weight: bolder;
+    margin:15px;
+    color: bisque;
+}
+
+.textBox-1 h2 span{
+    color: #13D848;
+}
+
+.textBox-1 h3{
+    font-size: 1rem;
+    font-weight: bold;
+    margin:15px;
+    color: white;
+
+}
+
+.textBox-1 p{
+    font-size: .8rem;
+    margin:5px 15px;
+    color: bisque;
+
+}
+
+.viewBtn-1{
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 2px solid #13D848;
+    margin:5px 15px;
+    border-radius: 15px;
+
+    color: #13D848;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.viewBtn-1:hover{
+    background-color: #ff92f9;
+    color: black;
+    border: 2px solid #ff92f9;
+    transition: 1s;
+}
+
+.viewBtn-1:active{
+    background-color: #ff92f9;
+    transition: 0.5s;
+}
+
+.videoBox-1{
+    width: 45%;
+    height: 60vh;
+    background-image: linear-gradient(90deg,#ff92f9 30%,#FEC5FB  100%);
+
+    color: white;
+    border-radius: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+    padding: 0;
+    overflow: hidden;
+}
+
+.videoBox-1 video{
+    width: 95%;
+    height: 100%;
+    margin: 0;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.666));
+
+}
+
+/* Project 2 (Div) */
+.pro-2{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), black);
+}
+
+.pro-2-box{
+    width: 100%;
+    height: 100%;
+    background-color: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+
+}
+ 
+.textBox-2{
+    width: 45%;
+    height: 100%;
+    color: bisque;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+
+}
+
+.textBox-2 h2{
+    font-size: 3rem;
+    font-weight: bolder;
+    margin:15px;
+    color: bisque;
+    text-align: right;
+}
+
+.textBox-2 h2 span{
+    color: #13D848;
+}
+
+.textBox-2 h3{
+    font-size: 1rem;
+    font-weight: bold;
+    margin:15px;
+    color: white;
+    text-align: end;
+
+}
+
+.textBox-2 p{
+    font-size: .8rem;
+    margin:5px 15px;
+    color: bisque;
+    text-align: end;
+
+}
+
+.viewBtn-2{
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 2px solid #13D848;
+    margin:5px 15px;
+    border-radius: 15px;
+
+    color: #13D848;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.viewBtn-2:hover{
+    background-color: #01b2d1;
+    color: black;
+    border: 2px solid #01b2d1;
+    transition: 1s;
+}
+
+.viewBtn-2:active{
+    background-color: white;
+    transition: 0.5s;
+}
+
+.videoBox-2{
+    width: 45%;
+    height: 60%;
+    background-image: linear-gradient(90deg,#01b2d1 30%,#96efff  100%);
+
+    color: white;
+    border-radius: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+.videoBox-2 video{
+    width: 95%;
+    height: 100%;
+    margin: 0;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.666));
+
+}
+
+/* Other Web Projects (Div) */
+.pro-3{
+    width: 90%;
+    height: 60vh;
+    background-image: linear-gradient(90deg, #fc8200, #fcac56);
+    border-radius: 50px; 
+}
+
+.textBox-3{
+    width: 95%;
+    height: 15%;
+    background-color: none;
+    display: flex;
+    align-items: center;
+}
+
+.card-wrapper{
+    width: 95%;
+    height: 80%;
+    background-color: none;
+}
+
+.content{ 
+    width: 100%;
+    height: 100%;
+    background-color: none;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    overflow-x: scroll;
+    gap: 20px;
+}
+
+
+.cell{
+    width: 50px;
+    height: 50px;
+    background-image: linear-gradient(green, yellow);
+}
+
+
+/* Responsive styles for mobile */
+@media (max-width: 567px) {
+    .menuBar-list{
+        display: none;
+    }
+
+    .menuBar{
+        justify-content: end!important;
+    }
+
+    .toggle{
+        display: block;
+        margin-right: 5%;
+    }
+
+    .sidebar.active{
+        display: block;
+    }
+    .about{
+        background-image: radial-gradient(300px at top left, rgb(22, 72, 1), rgb(0, 0, 0));  
+
+    }
+
+    .f-name{
+        font-size: 3rem;
+    }
+
+    .f-name span{
+        color: #13D848;
+        -webkit-text-stroke: 1px #13D848;
+    }
+
+    .l-name{
+        font-size: 4rem;
+        -webkit-text-stroke: 1px bisque;
+        margin-top: 15%;
+    }
+
+    .l-name span{
+        color: bisque;
+        -webkit-text-stroke: 1px bisque;
+        margin-top:10%;
+
+    }
+
+    .snap{
+        font-size: 0.75rem;
+    }
+
+    .snap p{
+        width: 80%;
+        height: 100%;
+        padding: 0;
+
+    }    
+
+    .svg-div-1 img{
+        width: 100px;
+        height: 200px;
+    }
+
+/* Project 1 mobile screen */
+    .pro-1{
+        width:100%;
+        height: 100vh;
+        padding-top: 15%;
+    }
+    .pro-1-box{
+        width:100%;
+        height: 85%;
+        flex-direction: column;
+        justify-content: space-between;
+        border-bottom: none;
+        border: 2px solid #ff92f9;
+        border-radius: 30px;
+        padding: 2px;
+    }
+
+    .textBox-1{
+        width: 100%;
+        height: 70%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .textBox-1 h2{
+        font-size: 2rem;
+        margin: 5px 0px;
+    }
+    
+
+
+    .textBox-1 h3{
+        font-size: 1rem;
+        margin: 5px 0px;
+
+    }
+
+    .textBox-1 p{
+        font-size: .8rem;
+        margin: 5px 0px;
+
+
+    }
+
+    .videoBox-1{
+        width: 100%;
+        height: 30%;
+        border-radius: 0px 0px 30px 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .videoBox-1 video{
+        width: 90%;
+        height: 80%;
+    }
+
+/* Project 2 mobile screen */
+    .pro-2{
+        width:100%;
+        height: 100vh;
+        padding-top: 15%
+    }
+
+    .pro-2-box{
+        width:100%;
+        height: 85%;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        border-bottom: none;
+        border: 2px solid #01b2d1;
+        border-radius: 30px;
+        padding: 2px;
+    }
+
+    .textBox-2{
+        width: 100%;
+        height: 70%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .textBox-2 h2{
+        font-size: 2rem;
+        margin: 5px 0px;
+        text-align: center;
+    }
+    
+
+
+    .textBox-2 h3{
+        font-size: 1rem;
+        margin: 5px 0px;
+        text-align: center;
+
+    }
+
+    .textBox-2 p{
+        font-size: .8rem;
+        margin: 5px 0px;
+
+
+    }
+
+    .videoBox-2{
+        width: 100%;
+        height: 30%;
+        border-radius: 0px 0px 30px 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .videoBox-2 video{
+        width: 90%;
+        height: 80%;
+    }
+
+}
+    
+
+/* Responsive styles for Tab size */
+@media (max-width: 992px) and (min-width: 568px) {
+    .menuBar-list{
+        display: none;
+    }
+
+    .menuBar{
+        justify-content: end!important;
+    }
+
+    .toggle{
+        display: block;
+        margin-right: 5%;
+    }
+
+    .sidebar.active{
+        display: block;
+        transition: 1s;
+    }
+
+    .sidebar-menu .menu-btn{
+        font-size: 1rem;
+        padding: 5px 10px;
+        border-radius: 5px;
+
+    
+    }
+
+    .f-name{
+        font-size: 5.5rem;
+
+    }
+
+    .l-name{
+        font-size: 7.5rem;
+        /* -webkit-text-stroke: 2px rgb(234, 34, 100); */
+        margin-top: 15%;
+
+    }
+
+    .snap{
+        font-size: 1.20rem;
+    }
+
+    .snap p{
+        width: 90%;
+        height: 90%;
+    }
+
+    .svg-div-1 img{
+        width: 200px;
+        height: 200px;
+    }
+
+/* Project 1 Tab screen */
+    .pro-1{
+        width:100%;
+        height: 100vh;
+        padding-top: 15%;
+    }
+
+    .pro-1-box{
+        width:100%;
+        height: 85%;
+        flex-direction: column;
+        justify-content: space-between;
+        border-bottom: none;
+        border: 2px solid #ff92f9;
+        border-radius: 30px;
+        padding: 2px;
+    }
+
+    .textBox-1{
+        width: 100%;
+        height: 70%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .textBox-1 h2{
+        font-size: 3rem;
+        margin: 5px 0px;
+    }
+    
+
+
+    .textBox-1 h3{
+        font-size: 2rem;
+        margin: 5px 0px;
+
+    }
+
+    .textBox-1 p{
+        font-size: 1rem;
+        margin: 5px 0px;
+
+
+    }
+
+    .videoBox-1{
+        width: 100%;
+        height: 30%;
+        border-radius: 0px 0px 30px 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .videoBox-1 video{
+        width: 90%;
+        height: 80%;
+    }
+
+/* Project 2 Tab screen */
+    .pro-2{
+        width:100%;
+        height: 100vh;
+        padding-top: 15%;
+    }
+
+    .pro-2-box{
+        width:100%;
+        height: 85%;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        border-bottom: none;
+        border: 2px solid #01b2d1;
+        border-radius: 30px;
+        padding: 2px;
+    }
+
+    .textBox-2{
+        width: 100%;
+        height: 70%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .textBox-2 h2{
+        font-size: 3rem;
+        margin: 5px 0px;
+        text-align: center;
+    }
+    
+
+
+    .textBox-2 h3{
+        font-size: 2rem;
+        margin: 5px 0px;
+        text-align: center;
+
+    }
+
+    .textBox-2 p{
+        font-size: 1rem;
+        margin: 5px 0px;
+
+
+    }
+
+    .videoBox-2{
+        width: 100%;
+        height: 30%;
+        border-radius: 0px 0px 30px 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .videoBox-2 video{
+        width: 90%;
+        height: 80%;
+    }
+}
