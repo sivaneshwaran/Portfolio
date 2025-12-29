@@ -22,7 +22,7 @@ function toggle_click(){
     });
 
     if(toggleIcon.getAttribute("src") === "/images/menu-svgrepo-com.svg"){
-        toggleIcon.setAttribute("src","/images/cancel-svgrepo-com (white).svg");  
+        toggleIcon.setAttribute("src","images/cancel-svgrepo-com (white).svg");  
         menuTween.restart();
 
     }else{
