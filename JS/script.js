@@ -1,11 +1,13 @@
 gsap.registerPlugin(ScrollTrigger);
 
-
+// Variables for Header
 const toggleBtn = document.querySelector(".toggle-btn");
 const toggleIcon = document.querySelector(".toggleIcon");
 const sidebar = document.querySelector(".sidebar");
 const sidebar_btn = document.querySelectorAll("#sidebar-btn");
-const main_box = document.querySelector(".about-box");
+// Variables for Hero section
+const main_box = document.querySelector(".home-box");
+// Variables for About me section
 const projects = document.querySelector(".projects");
 const textBox_1 = document.querySelector(".textBox-1");
 const videoBox_1 = document.querySelector(".videoBox-1");

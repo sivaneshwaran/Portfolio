@@ -31,15 +31,16 @@
 </head>
 <body>
 <!-- 
-    SECTION 1 (Navbar in HEADER)   
-    SECTION 2 (ABOUT) 
+    SECTION 1 (Navbar in Header)   
+    SECTION 2 (Home) 
+    SECTION 3 (About) 
     SECTION 3 (EDUCTION & EXPERIENCE) 
     SECTION 4 (SKILLS) 
     SECTION 5 (PROJECTS with CONTACTS FOOTER) 
 -->
 
 
-<!-- SECTION 1 (Navbar in HEADER) -->
+<!-- SECTION 1 (Navbar in Heder) -->
     <header class="intro container-fluid">
     <!-- Navbar content only -->
         <nav class="Navbar">
@@ -53,11 +54,11 @@
                 <div class="menuBar col-xl-9 col-lg-9 col-md-2 col-sm-7 col-2 d-flex justify-content-center align-items-center p-1" id="menuBar">
                     <ul class="menuBar-list  p-1">
                     <!-- Menu Button one "Home" -->
-                        <li><a href="#" class="nav-link menu-btn  active-btn" >Home</a></li>
+                        <li><a href="#home" class="nav-link menu-btn  active-btn" >Home</a></li>
                     <!-- Menu Button one "About" -->
                         <li><a href="#" class="nav-link menu-btn ">About me</a></li>
                     <!-- Menu Button one "Qualification" with inner list -->
-                        <li><a href="#" class="nav-link menu-btn ">Eperience</a></li>
+                        <li><a href="#experience" class="nav-link menu-btn ">Eperience</a></li>
                     <!-- Menu Button one "Soft Skills"-->
                         <li><a href="#" class="nav-link menu-btn ">Soft Skills</a></li>
                     <!-- Menu Button one "Technical Skills"-->
@@ -85,7 +86,7 @@
     <div class="sidebar">        
         <ul class="sidebar-menu  p-1">
             <!-- Menu Button one "Home" -->
-                <li><a href="#" class="nav-link menu-btn  animate__animated  active-btn" id="sidebar-btn">Home</a></li>
+                <li><a href="#" class="nav-link menu-btn active-btn" id="sidebar-btn">Home</a></li>
             <!-- Menu Button one "About" -->
                 <li><a href="#" class="nav-link menu-btn animate__animated" id="sidebar-btn">About me</a></li>
             <!-- Menu Button one "Qualification" with inner list -->
@@ -99,9 +100,9 @@
         </ul>     
     </div>
 
-<!-- SECTION 2 (ABOUT) -->  
-    <section class="about d-flex justify-content-center align-items-center">
-        <div class="about-box">
+<!-- SECTION 2 (Home) -->  
+    <section class="home d-flex justify-content-center align-items-center" id="home">
+        <div class="home-box">
             <div class="f-name animate__animated animate__fadeInUp ">
                 <span>Full</span>Stack
                 <div class="l-name animate__animated animate__fadeInUp animate__slow">
@@ -126,12 +127,18 @@
            
         </div>
 
-    </section><!-- Section 2 "About" is ending here-->
+    </section><!-- Section 2 "Home" is ending here-->
 
+<!-- Section 3 for About me  -->
+    <section class="about-me">
+        <div class="text">
+            <img class="profile-img" src="images/profile image.png" alt="profile image">
+        </div>
+    </section>
 
 
 <!-- SECTION 3 (EDUCTION & EXPERIENCE) -->
-<section class="container-fluid">
+<section class="container-fluid" id="experience">
 <!-- Project I -->
     <div class="pro-1">
         <div class="pro-1-box">
