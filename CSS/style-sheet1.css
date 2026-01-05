@@ -12,14 +12,22 @@ body{
 
 /* HEADER section */
 .intro{
+    height: 15vh!important;
     background-color: none;
     position: fixed;
     z-index: 100;
     backdrop-filter: blur(40px);
     border-bottom: 1px solid white;
+    transition: transform 0.5s ease-out;
+
 }
 
 /* Navbar contents */
+.Navbar{
+    height: 15vh!important;
+
+}
+
 .portfolio{
     display: flex;
     justify-content: center;
@@ -247,6 +255,7 @@ body{
 .about-me{
     width:100%;
     height:100vh;
+    backdrop-filter: blur(50px);
     background-image: url(/./images/Bg-about-me.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -256,8 +265,9 @@ body{
 }
 
 .profile-img{
-    width: 45%;
-    height: 60%;
+    width: 25%!important;
+    height: 25%!important;
+    margin-top:5%;
 }
 
 /* Project 1 (Div) */
@@ -523,6 +533,14 @@ body{
 
 /* Responsive styles for mobile */
 @media (max-width: 567px) {
+    .intro{
+        height: 10vh!important;
+    }
+
+    .Navbar{
+        height: 10vh!important;
+    }
+
     .menuBar-list{
         display: none;
     }
@@ -583,12 +601,12 @@ body{
     }
 
 /* About me section for mobile screen */
-    .profile-img{
-        width: 100%;
-        height: 100%;
+    /* .profile-img{
+        width: 80%;
+        height: 50%;
         transform:scale(1);
         margin-top: 40%;
-    }
+    } */
 
 
 /* Project 1 mobile screen */
@@ -718,7 +736,7 @@ body{
     
 
 /* Responsive styles for Tab size */
-@media (max-width: 992px) and (min-width: 568px) {
+@media (max-width: 1024px) and (min-width: 568px) {
     .menuBar-list{
         display: none;
     }
@@ -770,6 +788,14 @@ body{
         width: 200px;
         height: 200px;
     }
+
+/* About me section for Tablet */
+    /* .profile-img{
+        width: 60%;
+        height: 60%;
+        transform:scale(1);
+        margin-top: 0%;
+    } */
 
 /* Project 1 Tab screen */
     .pro-1{
