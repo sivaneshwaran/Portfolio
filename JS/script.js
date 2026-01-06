@@ -10,7 +10,7 @@ var sidebar_active = false;
 // Variables for Hero section
 const main_box = document.querySelector(".home-box");
 // Variables for About me section
-const port_img = document.querySelector(".profile-img");
+const port_img = document.querySelector(".img-box");
 const projects = document.querySelector(".projects");
 const textBox_1 = document.querySelector(".textBox-1");
 const videoBox_1 = document.querySelector(".videoBox-1");
@@ -59,7 +59,7 @@ gsap.from(port_img, {
     scrollTrigger:{
         trigger:".about-me",
         start: "top top",
-        end: "50% top",
+        end: "bottom top",
         scrub:true,
         pin:true,
         // markers: true

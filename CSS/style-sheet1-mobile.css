@@ -1,0 +1,208 @@
+/* Responsive styles for mobile */
+@media (max-width: 567px) {
+    .intro{
+        height: 10vh!important;
+    }
+
+    .Navbar{
+        height: 10vh!important;
+    }
+
+    .menuBar-list{
+        display: none;
+    }
+
+    .menuBar{
+        justify-content: end!important;
+    }
+
+    .toggle{
+        display: block;
+        margin-right: 5%;
+    }
+
+    .sidebar.active{
+        display: block;
+    }
+    .about{
+        background-image: radial-gradient(300px at top left, rgb(22, 72, 1), rgb(0, 0, 0));  
+
+    }
+
+    .f-name{
+        font-size: 3rem;
+    }
+
+    .f-name span{
+        color: #13D848;
+        -webkit-text-stroke: 1px #13D848;
+    }
+
+    .l-name{
+        font-size: 4rem;
+        -webkit-text-stroke: 1px bisque;
+        margin-top: 15%;
+    }
+
+    .l-name span{
+        color: bisque;
+        -webkit-text-stroke: 1px bisque;
+        margin-top:10%;
+
+    }
+
+    .snap{
+        font-size: 0.75rem;
+    }
+
+    .snap p{
+        width: 80%;
+        height: 100%;
+        padding: 0;
+
+    }    
+
+    .svg-div-1 img{
+        width: 100px;
+        height: 200px;
+    }
+
+/* About me section for mobile screen */
+    /* .profile-img{
+        width: 80%;
+        height: 50%;
+        transform:scale(1);
+        margin-top: 40%;
+    } */
+
+    .oval{
+        width: 100%;
+        height: 80%;
+    }
+
+
+/* Project 1 mobile screen */
+    .pro-1{
+        width:100%;
+        height: 100vh;
+        padding-top: 15%;
+    }
+    .pro-1-box{
+        width:100%;
+        height: 85%;
+        flex-direction: column;
+        justify-content: space-between;
+        border-bottom: none;
+        border: 2px solid #ff92f9;
+        border-radius: 30px;
+        padding: 2px;
+    }
+
+    .textBox-1{
+        width: 100%;
+        height: 70%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .textBox-1 h2{
+        font-size: 2rem;
+        margin: 5px 0px;
+    }
+    
+
+
+    .textBox-1 h3{
+        font-size: 1rem;
+        margin: 5px 0px;
+
+    }
+
+    .textBox-1 p{
+        font-size: .8rem;
+        margin: 5px 0px;
+
+
+    }
+
+    .videoBox-1{
+        width: 100%;
+        height: 30%;
+        border-radius: 0px 0px 30px 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .videoBox-1 video{
+        width: 90%;
+        height: 80%;
+    }
+
+/* Project 2 mobile screen */
+    .pro-2{
+        width:100%;
+        height: 100vh;
+        padding-top: 15%
+    }
+
+    .pro-2-box{
+        width:100%;
+        height: 85%;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        border-bottom: none;
+        border: 2px solid #01b2d1;
+        border-radius: 30px;
+        padding: 2px;
+    }
+
+    .textBox-2{
+        width: 100%;
+        height: 70%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .textBox-2 h2{
+        font-size: 2rem;
+        margin: 5px 0px;
+        text-align: center;
+    }
+    
+
+
+    .textBox-2 h3{
+        font-size: 1rem;
+        margin: 5px 0px;
+        text-align: center;
+
+    }
+
+    .textBox-2 p{
+        font-size: .8rem;
+        margin: 5px 0px;
+
+
+    }
+
+    .videoBox-2{
+        width: 100%;
+        height: 30%;
+        border-radius: 0px 0px 30px 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .videoBox-2 video{
+        width: 90%;
+        height: 80%;
+    }
+
+}
+    
