@@ -49,24 +49,25 @@ gsap.to(main_box, {
         end: "bottom 40%",
         pin: true,
         scrub: true,
+        // markers:true
     },
     scale: 0.7,
     opacity: 0
 });
 
 // About me scroll trigger
-gsap.from(port_img, {
-    scrollTrigger:{
-        trigger:".about-me",
-        start: "top top",
-        end: "bottom top",
-        scrub:true,
-        pin:true,
-        // markers: true
-    },
-    xPercent:-100,
-
-})
+// gsap.from(port_img, {
+//     scrollTrigger:{
+//         trigger: port_img,
+//         start: "top center",
+//         end: "bottom center",
+//         scrub:true,
+//         pin:true,
+//         markers: true
+//     },
+//     xPercent:-200,
+//     opacity: 0,
+// });
 
 // Project I animation
 // Pro-I text
