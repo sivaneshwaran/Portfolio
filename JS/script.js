@@ -60,32 +60,44 @@ gsap.to(main_box, {
 
 // About me scroll trigger Animation
 // Animation for "About me" heading 
-// gsap.from(about, {
-//     scrollTrigger:{
-//         trigger: ".about-box",
-//         start: "top top",
-//         end: "bottom top",
-//         scrub:true,
-//         pin:true,
-//         markers: true
-//     },
-//     y: 100,
-//     opacity: 0,
-// });
+gsap.from(about, {
+    scrollTrigger:{
+        trigger: ".about-box",
+        start: "top top",
+        end: "bottom center",
+        scrub:true,
+        pin:true,
+        // markers: true
+    },
+    y:-100,
+    opacity: 0,
+});
 
-// gsap.from(port_img, {
-//     scrollTrigger:{
-//         trigger: ".about-box",
-//         start: "top top",
-//         end: "bottom top",
-//         scrub: true,
-//         pin: true,
-//         markers: true
-//     },
-//     x:100,
-//     opacity:0
-// })
+gsap.from(port_img, {
+    scrollTrigger:{
+        trigger: ".about-me",
+        start: "top top",
+        end: "bottom center",
+        scrub: true,
+        // pin: true,
+        // markers: true
+    },
+    scale: 0.7,
+    opacity:0
+});
 
+gsap.from(about_text, {
+    scrollTrigger:{
+        trigger: ".about-me",
+        start: "top top",
+        end: "bottom center",
+        scrub: true,
+        // pin: true,
+        // markers: true
+    },
+    scale: 0.7,
+    opacity:0
+})
 
 
 
