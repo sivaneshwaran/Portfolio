@@ -10,6 +10,8 @@ var sidebar_active = false;
 // Variables for Hero section
 const main_box = document.querySelector(".home-box");
 // Variables for About me section
+const about = document.querySelector(".about");
+const about_text = document.querySelector(".about-text");
 const port_img = document.querySelector(".img-box");
 const projects = document.querySelector(".projects");
 const textBox_1 = document.querySelector(".textBox-1");
@@ -22,6 +24,7 @@ const menuTween = gsap.to(toggleIcon, {rotation:180, duration:1, repeat: 0});
 // Nav bar hidding script
 var lastScrollTop = 0;
 
+// Nav action listner for hiding 
 window.addEventListener("scroll",()=>{
     var scrollVal = window.pageYOffset || document.documentElement.scrollTop;
     if(scrollVal > lastScrollTop){
@@ -55,19 +58,36 @@ gsap.to(main_box, {
     opacity: 0
 });
 
-// About me scroll trigger
-// gsap.from(port_img, {
+// About me scroll trigger Animation
+// Animation for "About me" heading 
+// gsap.from(about, {
 //     scrollTrigger:{
-//         trigger: port_img,
-//         start: "top center",
-//         end: "bottom center",
+//         trigger: ".about-box",
+//         start: "top top",
+//         end: "bottom top",
 //         scrub:true,
 //         pin:true,
 //         markers: true
 //     },
-//     xPercent:-200,
+//     y: 100,
 //     opacity: 0,
 // });
+
+// gsap.from(port_img, {
+//     scrollTrigger:{
+//         trigger: ".about-box",
+//         start: "top top",
+//         end: "bottom top",
+//         scrub: true,
+//         pin: true,
+//         markers: true
+//     },
+//     x:100,
+//     opacity:0
+// })
+
+
+
 
 // Project I animation
 // Pro-I text
@@ -81,7 +101,7 @@ gsap.from(textBox_1, {
         
     },
     xPercent: -100,
-    delay: 1
+    // delay: 1
 });
 // Pro-I Video
 gsap.from(videoBox_1, {

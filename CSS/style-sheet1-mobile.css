@@ -69,8 +69,17 @@
 
 /* About me section for mobile screen */
     .about-me{
-        height: 150vh!important;
+        height: 200vh;
         background: radial-gradient(350px at right, rgb(22, 72, 1), rgb(0, 0, 0));
+    }
+
+    .about-box{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 5% 40% 40%;
+        row-gap: 2%;
+        column-gap: 5%;
+        grid-auto-flow: column;
+        padding: 2%;
     }
 
     .about{
@@ -81,25 +90,13 @@
         -webkit-text-fill-color: transparent;
         font-weight: bolder;
         font-size: 26px;
-        display: inline-block;
-
-    }
-
-    .box{
-        width: 100%;
-        height: 190vh;
-        flex-direction: column;
-        justify-content: space-evenly;
-        /* padding: 5% 5%; */
-    }
-
-    .img-box{
-        width:90%;
-        height: 80vh!important;
+        /* display: inline-block; */
+        grid-column: span 1;
     }
 
     .about-text{
-        width: 90%;
+        text-align: center;
+
         h2{
             text-align: center;
             font-size: 20px;
@@ -110,10 +107,6 @@
         }
 
     }
-
-
-
-
 
 
 /* Project 1 mobile screen */
