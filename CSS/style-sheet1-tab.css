@@ -88,6 +88,36 @@
         }
     }
 
+/* My skills section for Tab */
+    .skills{
+        height: 50vh;
+    }
+
+    .badge{
+        width: 45%;
+        height: 50vh;
+    }
+
+    .softwares{
+        left: 5%;
+
+    }
+
+    .language{
+        left:55%;
+
+    }
+
+    .frontend{
+        left:5%;
+
+    }
+
+    .backend{
+        left:55%;
+
+    }
+
 
 /* Project 1 Tab screen */
     .pro-1{

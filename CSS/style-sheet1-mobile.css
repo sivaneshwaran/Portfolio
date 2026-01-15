@@ -108,6 +108,31 @@
 
     }
 
+/* My skills section for mobile */
+    .badge{
+        width: 100%;
+    }
+
+    .softwares{
+        left: 4%;
+
+    }
+
+    .language{
+        left: 4%;
+
+    }
+
+    .frontend{
+        left:4%;
+
+    }
+
+    .backend{
+        left:4%;
+
+    }
+
 
 /* Project 1 mobile screen */
     .pro-1{

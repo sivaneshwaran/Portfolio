@@ -82,7 +82,7 @@ gsap.from(port_img, {
         // pin: true,
         // markers: true
     },
-    opacity:0
+    y:100,
 });
 
 gsap.from(about_text, {
@@ -94,7 +94,7 @@ gsap.from(about_text, {
         // pin: true,
         // markers: true
     },
-    opacity:0
+    y: 100,
 })
 
 
