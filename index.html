@@ -32,17 +32,8 @@
 
 </head>
 <body>
-<!-- 
-    SECTION 1 (Navbar in Header)   
-    SECTION 2 (Home) 
-    SECTION 3 (About) 
-    SECTION 3 (EDUCTION & EXPERIENCE) 
-    SECTION 4 (SKILLS) 
-    SECTION 5 (PROJECTS with CONTACTS FOOTER) 
--->
 
-
-<!-- SECTION 1 (Navbar in Heder) -->
+<!-- Header (Navbar in Heder) -->
     <header class="intro container-fluid px-0">
     <!-- Navbar content only -->
         <nav class="Navbar container-fluid d-flex justify-content-center align-items-center p-0">
@@ -84,7 +75,7 @@
       
     </header>
 
-<!-- Menubar for mobile device -->
+<!-- Menubar for mobile device and Tablet device -->
     <div class="sidebar">        
         <ul class="sidebar-menu  p-1">
             <!-- Menu Button one "Home" -->
@@ -102,7 +93,7 @@
         </ul>     
     </div>
 
-<!-- SECTION 2 (Home) -->  
+<!-- SECTION 1 (Hero section) -->  
     <section class="home d-flex justify-content-center align-items-center" id="home">
         <div class="home-box">
             <div class="f-name animate__animated animate__fadeInUp ">
@@ -136,8 +127,7 @@
         <!-- For empty space -->
     </section>
 
-
-<!-- Section 3 for About me  -->
+<!-- Section 2 for About me  -->
     <section class="about-me d-flex justify-content-center align-items-center flex-column ">
         <div class="about-box">
         <!-- Section Topic -->
@@ -149,18 +139,18 @@
                 <h2 class="name">SIVANESHWARAN</h2>
                 <p>I'm a passionate full-stack developer with a keen eye for design and a love for creating seamless user experiences. With expertise spanning both frontend and backend technologies, I bring ideas to life through clean, efficient code</p>
                 <p class="hilight">"I believe in continuous learning and staying updated with the latest technologies to deliver innovative solutions that make a difference"</p>
+                <a  class="w-100 d-flex justify-content-center align-items-center" href="" >
+                    <button class="btn bg-none border border-success border-2 rounded rounded-1 text-success">Download Resume</button>
+                </a>
             </div>
         </div>
     </section>
 
-<!-- Section "space" for Empty space-->
-    <section style="width: 100%; height: 100vh;">
-        <!-- For empty space -->
-    </section>
-
-<!-- Section for skills  -->
+<!-- Section 3 for skills  -->
     <section class="container-fluid  d-flex justify-content-start align-items-start flex-column">
-        <div class="skills w-100 d-flex justify-content-center align-items-start p-0"><h2 class="skill-box w-50 w-lg-25 p-0 text-center fw-bolder h1 bg-success">My Skills</h2></div>
+        <div class="skills w-100 d-flex justify-content-center align-items-start p-0">
+            <h2 class="skill-box w-50 w-lg-25 p-0 text-center fw-bolder h1 bg-success">My Skills</h2>
+        </div>
         <div class="badge softwares ">
             <h5 class=" fw-bold">Softwares</h5>
             <div class="icons">
@@ -209,7 +199,7 @@
 
     </section>
 
-<!-- SECTION 3 (EDUCTION & EXPERIENCE) -->
+<!-- SECTION 4 (Major Projects) -->
 <section class="container-fluid" >
 <!-- Project I -->
     <div class="pro-1">
@@ -249,21 +239,53 @@
         </div>
     </div>
 
-<!-- Other Web Projects -->
-     <div class="pro-3 container-fluid d-flex justify-content-evenly align-items-center flex-column">
-        <div class="textBox-3 ">
-            <h2 class="fw-bold w-100 text-center">Other Web Projects</h2>
-        </div>
-        <div class="card-wrapper container-fluid">
-            <div class="right-blur"></div>
-            <div class="left-blur"></div>
-            <div class="content">
-            </div>
-        </div>
-     </div>
+</section>
+
+<!-- Section for Education -->
+<section class="education container-fluid p-5">
+    <h2 class="edu-box fw-bolder h1">Education</h2>
+<!-- Institution Education -->
+    <div class="institution d-flex justify-content-evenly align-items-center flex-column">
+        <h2 class="text-center">Full-stack <br>     Development</h2>
+        <p class="text-center fw-bold">Adoro Multimedia Institution <br/><span>Coimbatore</span></p>
+    </div>
+
+<!-- College Education -->
+    <div class="college d-flex justify-content-around align-items-center flex-column">
+        <h2 class="text-center">B.Sc <br> Chemistry</h2>
+        <p class="text-center fw-bold">HKRH College of Arts and Science (A++)<br/><span>Uthamapalayam, Theni</span></p>
+    </div>
 
 </section>
 
+<!-- Experience Section -->
+<section class="experience container-fluid">
+    <h2 class="exp-box fw-bolder h1">Experience</h2>
+<!-- PVR experience -->
+    <div class="pvr d-flex justify-content-evenly align-items-center flex-column">
+        <h2 class="text-center ">Service Associate</h2>
+        <p class="text-center fw-bold">August 2024 <span class="fw-normal" style="color: rgb(255, 137, 10);">to</span> May 2025</p>
+        <p class="text-center fw-bold">PVR-INOX Cinemas<br><span>Coimbatore</span></p>
+    </div>
+<!-- Chola experience -->
+    <div class="chola d-flex justify-content-evenly align-items-center flex-column">
+        <h2 class="text-center">Credite Operation Executive</h2>
+        <p class="text-center fw-bold">May 2023 <span class="fw-normal" style="color: rgb(7, 185, 255);">to</span> August 2024</p>
+        <p class="text-center fw-bold">Cholamandalam Investment and Finance Company<br><span>Cumbum</span></p>
+    </div>
+</section>
+
+<footer class="container d-flex justify-content-center align-items-center px-5 py-3" id="footer">
+    <a href="#footer">
+        <img class="be mx-2" src="images/SVG/Behance white.svg" alt="Behance portfolio link" width="50px" height="50px">
+    </a>
+    <a href="#footer">
+        <img class="figma mx-2" src="images/SVG/Figma white.svg" alt="Figma portfolio link" width="50px" height="50px">
+    </a>
+    <a href="#footer">
+        <img class="whatsapp mx-2" src="images/SVG/Whatsapp white.svg" alt="Whatsapp chat icon" width="50px" height="50px">
+    </a>
+</footer>
 
 <!-- JQUERY LINK -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

@@ -109,7 +109,12 @@
     }
 
 /* My skills section for mobile */
+    .skills{
+        margin: 14% 0;
+    }
+
     .badge{
+        box-shadow: none;
         width: 100%;
     }
 
@@ -257,5 +262,36 @@
         height: 80%;
     }
 
+/* Education Section */
+    .edu-box{
+        align-items: end!important;
+    }
+    .college{
+        grid-column: span 2;
+    }
+
+    .institution{
+        grid-column: span 2;
+    }
+
+/* Experience section */
+    .experience{
+        padding: 5% 5%;
+    }
+    .exp-box{
+        align-items: end!important;
+    }
+
+    .pvr{
+        grid-column: span 2;
+    }
+
+    .chola{
+        grid-column: span 2;
+    }
+
 }
+
+
+
     

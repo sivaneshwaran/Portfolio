@@ -9,15 +9,16 @@ const sidebar_btn = document.querySelectorAll("#sidebar-btn");
 var sidebar_active = false;
 // Variables for Hero section
 const main_box = document.querySelector(".home-box");
-// Variables for About me section
-const about = document.querySelector(".about");
-const about_text = document.querySelector(".about-text");
-const port_img = document.querySelector(".img-box");
+// Varibales for project section
 const projects = document.querySelector(".projects");
 const textBox_1 = document.querySelector(".textBox-1");
 const videoBox_1 = document.querySelector(".videoBox-1");
 const textBox_2 = document.querySelector(".textBox-2");
 const videoBox_2 = document.querySelector(".videoBox-2");
+// Variables for footer section
+const behance = document.querySelector(".be");
+const figma = document.querySelector(".figma");
+const whatsapp = document.querySelector(".whatsapp");
 
 const menuTween = gsap.to(toggleIcon, {rotation:180, duration:1, repeat: 0});
 
@@ -32,12 +33,10 @@ window.addEventListener("scroll",()=>{
             // header.classList.add("nav-hide");
             // console.log("scroll down");
             header.style.transform = "translateY(-16vh)";
-
         }
     }else if(scrollVal < lastScrollTop){
             // header.style.marginTop = "0";
             header.style.transform = "translateY(0)";
-
         // console.log("scroll up");
     }
     
@@ -57,47 +56,6 @@ gsap.to(main_box, {
     scale: 0.7,
     opacity: 0
 });
-
-// About me scroll trigger Animation
-// Animation for "About me" heading 
-gsap.from(about, {
-    scrollTrigger:{
-        trigger: ".about-box",
-        start: "top top",
-        end: "bottom center",
-        scrub:true,
-        pin:true,
-        // markers: true
-    },
-    y:-100,
-    opacity: 0,
-});
-
-gsap.from(port_img, {
-    scrollTrigger:{
-        trigger: ".about-me",
-        start: "top top",
-        end: "bottom center",
-        scrub: true,
-        // pin: true,
-        // markers: true
-    },
-    y:100,
-});
-
-gsap.from(about_text, {
-    scrollTrigger:{
-        trigger: ".about-me",
-        start: "top top",
-        end: "bottom center",
-        scrub: true,
-        // pin: true,
-        // markers: true
-    },
-    y: 100,
-})
-
-
 
 // Project I animation
 // Pro-I text
@@ -176,3 +134,35 @@ function toggle_click(){
 };  
 
 toggleBtn.addEventListener("click", toggle_click);
+
+// Footer Script
+// Icon change for behance
+behance.addEventListener("mouseenter", ()=>{
+    behance.setAttribute("src", "images/SVG/Behance Blue.svg");
+    console.log("mouseenter");
+});
+behance.addEventListener("mouseleave", ()=>{
+    behance.setAttribute("src", "images/SVG/Behance white.svg");
+    console.log("mouseleave");
+
+});
+
+// Icon change for Figma
+figma.addEventListener("mouseenter", ()=>{
+    figma.setAttribute("src", "images/SVG/Figma color.svg");
+    console.log("mouseenter");
+});
+figma.addEventListener("mouseleave", ()=>{
+    figma.setAttribute("src", "images/SVG/Figma white.svg");
+    console.log("mouseleave");
+});
+
+// Icon change for whatsapp
+whatsapp.addEventListener("mouseenter", ()=>{
+    whatsapp.setAttribute("src", "images/SVG/Whatsapp green.svg");
+    console.log("mouseenter");
+});
+whatsapp.addEventListener("mouseleave", ()=>{
+    whatsapp.setAttribute("src", "images/SVG/Whatsapp white.svg");
+    console.log("mouseleave");
+});

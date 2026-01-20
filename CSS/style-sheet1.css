@@ -9,6 +9,17 @@ body{
     background-color: black;
 }
 
+/* body {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.05) 2px,
+      transparent 2px
+    ),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 2px, transparent 2px),
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+} */
 
 
 /* HEADER section */
@@ -341,17 +352,18 @@ body{
 
 /* My skills Section  */
 .skills{
-    height: 70vh;
+    height: 65vh;
     position: sticky;
     top: 18vh;
     z-index: 1;
+    margin: 8% 0;
 }
 
 .skill-box{
     background-image: linear-gradient(90deg, rgb(0, 255, 72),rgb(255, 132, 0),rgb(242, 0, 246),rgb(243, 147, 200));
     -webkit-background-clip: text;
     background-clip: text;
-    color: transparent
+    color: transparent;
 }
 
 .badge{
@@ -362,6 +374,7 @@ body{
     border-radius: 20px;
     overflow: hidden;
     /* padding:0; */
+    margin: 5% 0;
 }
 
 
@@ -371,15 +384,18 @@ body{
     border: 3px solid rgb(0, 255, 72);
     left: 4%;
     z-index: 10;
+    box-shadow: 0px 0px 10px 0px rgb(0, 255, 72);
+
 
     h5{
         width: 100%;
-        height: 20%;
+        height: 15%;
         color: rgb(1, 255, 73);
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 0;
+        margin-bottom: 5%;
+        border-bottom: 3px solid rgb(1, 255, 73);
     }
 
     .icons{
@@ -428,15 +444,19 @@ body{
     left: 28%;
     border: 3px solid rgb(255, 132, 0);
     z-index: 11;
+    /* padding: 0%; */
+    box-shadow: 0px 0px 10px 0px rgb(255, 132, 0);
+
 
     h5{
         width: 100%;
-        height: 20%;
+        height: 15%;
         color: rgb(255, 132, 0);
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 0;
+        margin-bottom: 5%;
+        border-bottom: 3px solid rgb(255, 132, 0);
     }
 
     .icons{
@@ -482,15 +502,17 @@ body{
     left:52%;
     border: 3px solid rgb(242, 0, 246);
     z-index: 12;
+    box-shadow: 0px 0px 10px 0px rgb(242, 0, 246);
 
     h5{
         width: 100%;
-        height: 20%;
+        height: 15%;
         color: rgb(242, 0, 246);
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 0;
+        margin-bottom: 5%;
+        border-bottom: 3px solid rgb(242, 0, 246);
     }
 
     .icons{
@@ -537,15 +559,17 @@ body{
     left:76%;
     z-index: 13;
     border: 3px solid rgb(243, 147, 200);
+    box-shadow: 0px 0px 10px 0px rgb(243, 147, 200);
 
     h5{
         width: 100%;
-        height: 20%;
+        height: 15%;
         color: rgb(243, 147, 200);
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 0;
+        margin-bottom: 5%;
+        border-bottom: 3px solid rgb(243, 147, 200);
     }
 
     .icons{
@@ -802,43 +826,126 @@ body{
 
 }
 
-/* Other Web Projects (Div) */
-.pro-3{
-    width: 90%;
-    height: 60vh;
-    background-image: linear-gradient(90deg, #fc8200, #fcac56);
-    border-radius: 50px; 
-}
 
-.textBox-3{
-    width: 95%;
-    height: 15%;
-    background-color: none;
-    display: flex;
-    align-items: center;
-}
-
-.card-wrapper{
-    width: 95%;
-    height: 80%;
-    background-color: none;
-}
-
-.content{ 
-    width: 100%;
-    height: 100%;
-    background-color: none;
+/*Education section */
+.education{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    overflow-x: scroll;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .5fr 1fr;
     gap: 20px;
+    background-image: linear-gradient(180deg,black, black, rgb(26, 25, 25) );
+
+    .edu-box{
+        grid-column: span 2;
+        background-image: linear-gradient(90deg,  #00ff44,rgb(242, 0, 246));
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+    }
 }
 
+.college{
+    border-radius: 20px;
+    border: 3px solid rgb(242, 0, 246);
+    padding: 15px;
+    box-shadow: 0px 0px 10px 0px rgb(242, 0, 246);
+    margin: 5px;
+    background-image: linear-gradient(rgb(25, 25, 25), rgb(44, 44, 44));
 
-.cell{
-    width: 50px;
-    height: 50px;
-    background-image: linear-gradient(green, yellow);
+    /* background-image: linear-gradient(90deg, rgb(246, 83, 249),rgb(249, 163, 250)); */
+    h2{
+        color: rgb(242, 0, 246);
+    }
+
+    p{
+        /* background-color: rgb(242, 0, 246); */
+        border-radius: 10px;
+        padding: 5px;
+        color: white;
+    }
+    span{
+        color: bisque;
+    }
+
 }
 
+.institution{
+    border-radius: 20px;
+    border: 3px solid #00ff44;
+    box-shadow: 0px 0px 10px 0px #00ff44;
+    margin: 5px;
+    padding: 15px;
+    background-image: linear-gradient(rgb(25, 25, 25), rgb(34, 34, 34));
+
+    /* background-image: linear-gradient(90deg, #00ff44,#6af58f); */
+    h2{
+        color: #00ff44;
+    }
+
+    p{
+        /* background-color: rgb(242, 0, 246); */
+        border-radius: 10px;
+        padding: 5px;
+        color: white;
+    }
+
+    span{
+        color: bisque;
+    }
+
+}
+
+/* Experience */
+.experience{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .5fr 1fr 1fr;
+    gap: 20px;
+    padding: 5% 20%;
+    background-image: linear-gradient(180deg,  rgb(26, 25, 25) , black ,black);
+
+
+    .exp-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(90deg, rgb(255, 137, 10), rgb(7, 185, 255));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.pvr{
+    background-image: linear-gradient(rgb(25, 25, 25), rgb(44, 44, 44));
+    border: 3px solid rgb(255, 137, 10);
+    border-radius: 20px;
+    padding: 15px;
+    color: rgb(255, 137, 10);
+    box-shadow: 0 0 10px 0 rgb(255, 137, 10);
+    p{
+        color: white;
+    }
+}
+
+.chola{
+    background-image: linear-gradient(rgb(25, 25, 25), rgb(44, 44, 44));
+    border: 3px solid rgb(7, 185, 255);
+    border-radius: 20px;
+    padding: 15px;
+    color: rgb(7, 185, 255);
+    box-shadow: 0 0 10px 0 rgb(7, 185, 255);
+    p{
+        color: white;
+    }
+}
+
+footer{
+    border-top: 3px solid white;
+}
 
