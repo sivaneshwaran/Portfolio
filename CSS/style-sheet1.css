@@ -350,6 +350,34 @@ body{
     text-align: center;
 }   
 
+.download{
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 2px solid #13D848;
+    margin:5px 15px;
+    border-radius: 15px;
+
+    color: #13D848;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.download:hover{
+    /* background-color: #ff92f9; */
+    color: #ff92f9;
+    border: 2px solid #ff92f9;
+    transition: 1s;
+}
+
+.download:active{
+    border: 2px solid white;
+    color: white;
+}
+
 /* My skills Section  */
 .skills{
     height: 65vh;

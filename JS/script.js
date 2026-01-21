@@ -15,6 +15,13 @@ const textBox_1 = document.querySelector(".textBox-1");
 const videoBox_1 = document.querySelector(".videoBox-1");
 const textBox_2 = document.querySelector(".textBox-2");
 const videoBox_2 = document.querySelector(".videoBox-2");
+// Variables for Education and experience
+const education = document.querySelector(".education");
+const institution = document.querySelector(".institution");
+const college = document.querySelector(".college");
+const experience = document.querySelector(".experience");
+const pvr = document.querySelector(".pvr");
+const chola = document.querySelector(".chola");
 // Variables for footer section
 const behance = document.querySelector(".be");
 const figma = document.querySelector(".figma");
@@ -134,6 +141,25 @@ function toggle_click(){
 };  
 
 toggleBtn.addEventListener("click", toggle_click);
+
+// Education and Experience animation
+const zoom = (element)=>{
+    gsap.from(element, {
+        scrollTrigger:{
+            trigger: element,
+            start: "20% bottom",
+            end: "top center",
+            scrub: true,
+        },
+        scale:0.7, 
+        easing:"elastic.out"
+    });
+};
+
+zoom(institution, 0.7);
+zoom(college, 0.5);
+zoom(pvr);
+zoom(chola);
 
 // Footer Script
 // Icon change for behance
