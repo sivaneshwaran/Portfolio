@@ -29,6 +29,8 @@
 <!-- GSAP link -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/MorphSVGPlugin.min.js"></script>
+
 
 </head>
 <body>
@@ -47,11 +49,11 @@
                 <div class="menuBar col-xl-9 col-lg-9 col-md-2 col-sm-7 col-2 d-flex justify-content-center align-items-center p-1" id="menuBar">
                     <ul class="menuBar-list  p-1">
                     <!-- Menu Button one "Home" -->
-                        <li><a href="#home" class="nav-link menu-btn  active-btn" >Home</a></li>
+                        <li><a href="#" class="nav-link menu-btn  active-btn" >Home</a></li>
                     <!-- Menu Button one "About me" -->
                         <li><a href="#" class="nav-link menu-btn ">About me</a></li>
                     <!-- Menu Button one "Skills" -->
-                        <li><a href="#experience" class="nav-link menu-btn ">Skills</a></li>
+                        <li><a href="#" class="nav-link menu-btn ">Skills</a></li>
                     <!-- Menu Button one "Projects"-->
                         <li><a href="#" class="nav-link menu-btn ">Projects</a></li>
                     <!-- Menu Button one "Education"-->
@@ -140,7 +142,36 @@
                 <p>I'm a passionate full-stack developer with a keen eye for design and a love for creating seamless user experiences. With expertise spanning both frontend and backend technologies, I bring ideas to life through clean, efficient code</p>
                 <p class="hilight">"I believe in continuous learning and staying updated with the latest technologies to deliver innovative solutions that make a difference"</p>
                 <div class="w-100 d-flex justify-content-center align-items-center">
-                    <a  class="download " href="docs/Resume.pdf" download>Download Resume</a>
+                    <a href="docs/Resume.pdf" download style="text-decoration: none;">
+                        <button class="download-btn "> Download Resume </button>
+                    </a>
+                <!-- SVG icon for Morphing Download to Tick icon -->
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        	 viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve" width="50px">
+                        <style type="text/css">
+                        	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#57B145;}
+                        	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:none;}
+                        </style>
+                        <g id="download">
+                        	<path id="download-path" class="st0" d="M43.74,200c0-73.66,0-110.49,22.88-133.37C89.51,43.74,126.34,43.74,200,43.74c73.66,0,110.49,0,133.37,22.88
+                        		c22.88,22.88,22.88,59.71,22.88,133.37c0,73.66,0,110.49-22.88,133.37c-22.88,22.88-59.71,22.88-133.37,22.88
+                        		c-73.66,0-110.49,0-133.37-22.88C43.74,310.49,43.74,273.66,43.74,200z M200,110.15c6.47,0,11.72,5.25,11.72,11.72v81.09
+                        		l26.87-26.87c4.58-4.58,12-4.58,16.57,0c4.58,4.58,4.58,12,0,16.57l-46.88,46.88c-2.2,2.2-5.18,3.43-8.29,3.43
+                        		s-6.09-1.23-8.29-3.43l-46.88-46.88c-4.58-4.58-4.58-12,0-16.57c4.58-4.58,12-4.58,16.57,0l26.87,26.87v-81.09
+                        		C188.28,115.4,193.53,110.15,200,110.15z M137.5,266.41c-6.47,0-11.72,5.25-11.72,11.72c0,6.47,5.25,11.72,11.72,11.72h125
+                        		c6.47,0,11.72-5.25,11.72-11.72c0-6.47-5.25-11.72-11.72-11.72H137.5z"/>
+                        </g>
+                        <g id="tick">
+                        	<g id="SVGRepo_iconCarrier">
+                        		<path id="tick-path" class="st1" d="M200,354.87c-85.53,0-154.87-69.34-154.87-154.87S114.47,45.13,200,45.13
+                        			S354.87,114.47,354.87,200S285.53,354.87,200,354.87L200,354.87z M112.31,234.92c-6.93-7.01-6.93-18.29,0-25.3l9.12-9.07
+                        			c6.39-6.45,16.8-6.5,23.25-0.1c0.12,0.12,0.24,0.24,0.36,0.37l16.11,16.71c3.12,3.29,8.32,3.43,11.62,0.31
+                        			c0.11-0.1,0.21-0.2,0.31-0.31l82.08-84.61c6.25-6.59,16.66-6.87,23.26-0.62c0.17,0.16,0.33,0.32,0.49,0.48l8.85,8.95
+                        			c6.75,6.97,6.75,18.05,0,25.02L178.79,277.49c-6.31,6.53-16.72,6.71-23.25,0.4c-0.08-0.08-0.17-0.16-0.25-0.25L112.31,234.92z"/>
+                        	</g>
+                        </g>
+                    </svg>
+
                 </div>
             </div>
         </div>

@@ -9,6 +9,7 @@ const sidebar_btn = document.querySelectorAll("#sidebar-btn");
 var sidebar_active = false;
 // Variables for Hero section
 const main_box = document.querySelector(".home-box");
+const download = document.querySelector(".download-btn");
 // Varibales for project section
 const projects = document.querySelector(".projects");
 const textBox_1 = document.querySelector(".textBox-1");
@@ -63,6 +64,22 @@ gsap.to(main_box, {
     scale: 0.7,
     opacity: 0
 });
+
+function morph(){
+    gsap.to("#download-path", {duration:1, morphSVG:"#tick-path", ease:"power.out"});
+    download.setAttribute("disabled", "");
+    download.style.transform = "scaleX(1.1)";
+    download.style.opacity = 0;
+    setTimeout(()=>{
+        download.innerHTML ="Resume Downloaded";
+        download.style.opacity=1;
+        download.style.transform = "scaleX(1)";
+    },500);
+
+}
+
+download.addEventListener("click", morph);
+
 
 // Project I animation
 // Pro-I text
@@ -156,8 +173,8 @@ const zoom = (element)=>{
     });
 };
 
-zoom(institution, 0.7);
-zoom(college, 0.5);
+zoom(institution);
+zoom(college);
 zoom(pvr);
 zoom(chola);
 

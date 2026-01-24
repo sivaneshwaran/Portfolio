@@ -350,7 +350,8 @@ body{
     text-align: center;
 }   
 
-.download{
+.download-btn{
+    background-color: transparent;
     padding: 10px 20px;
     text-decoration: none;
     border: 2px solid #13D848;
@@ -363,17 +364,19 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    transition: 1s ease-in;
 }
 
 
-.download:hover{
+.download-btn:hover{
     /* background-color: #ff92f9; */
     color: #ff92f9;
     border: 2px solid #ff92f9;
     transition: 1s;
 }
 
-.download:active{
+.download-btn:active{
     border: 2px solid white;
     color: white;
 }
